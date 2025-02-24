@@ -44,9 +44,9 @@ integer		err00, err10;
 integer		pat_num;
 reg		check0=0, check1=0;
 
-// `ifdef SDF
-// 	initial $sdf_annotate(`SDFFILE, u_CONV);
-// `endif
+`ifdef SDF
+	initial $sdf_annotate(`SDFFILE, u_CONV);
+`endif
 
 CONV u_CONV(
 			.clk(clk),

@@ -1,18 +1,25 @@
 # IC Contest Previous Test Practice
 
-## 初賽 (Undergraduate)
+## 初賽
 
-### 2010 Serial Interface Transmitter/Receiver
+### 2010 UNIVERSITY: Serial Interface Transmitter/Receiver
 **TODO**
 
-### 2018 LCD CTRL
+### 2016 GRADUATED: LBP
+#### 困難點
+- 計算3*3 window的addr
+    - 解決方法：和CNN一樣用i, j計算。
+#### TODO
+- 還沒有做 synthesis。
+
+### 2018 UNIVERSITY: LCD CTRL
 #### 困難點
 - 計算 max, min, average 要用 pipeline，其他沒什麼問題。
 
 #### TODO
 - 還沒有做 synthesis。
 
-### 2019 CONV
+### 2019 UNIVERSITY: CONV
 #### Reference
 https://github.com/derek8955/ic_contest/tree/main/2019_univ_CONV
 #### 困難點
@@ -25,7 +32,7 @@ https://github.com/derek8955/ic_contest/tree/main/2019_univ_CONV
 #### TODO
 - 還沒有做 synthesis。
 
-### 2021 Geofence
+### 2021 UNIVERSITY: Geofence
 #### 困難點
 - 六個點的位置排序  
     - 解決方法：以 P0 為聚集點，用 V01, V02, V03, V04, V05 五條向量兩兩做外積，用泡沫排序的概念排序五條向量的順序，排序完就會是順時針的關係。
