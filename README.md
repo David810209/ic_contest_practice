@@ -1,69 +1,112 @@
 # IC Contest Previous Test Practice
 
-- design compiler還沒設定好，目前合成出來的面積數字都比較高，跟網路上比起來。
+目前 Design Compiler 使用課程的umc018製程，所以合成面積會比較大 (比賽是用tsmc13)
 
-## 初賽
+---
+
+## 總覽表格
+
+| 題目 | 年級 | Area | Time / Cycle | Score | Rank | 備註 |
+|------|------|------|-------------|-------|------|------|
+| 2010 Serial Interface Transmitter/Receiver | Univ | - | - | - | - | TODO |
+| 2016 LBP | Grad | 9167.56 | 1,746,430 ns | ~16,000,000,000 | B | DC問題，可能可達 A |
+| 2018 LCD CTRL | Univ | 119,244.79 | - | - | A | 有 latch，需調整 |
+| 2019 CONV | Univ | - | - | - | - | 目前測試有 error，需修正 |
+| 2021 Geofence | Univ | 156,566.99 | - | - | B | 面積過大，需重寫 |
+| 2022 JAM | Univ | 12,746.76 | 593,427 cycles | - | B | DC問題，可能可達 A |
+| 2019 FPSDC | Univ | - | - | - | - | TODO |
+
+---
+
+## 初賽 (Preliminary Round)
 
 ### 2010 UNIVERSITY: Serial Interface Transmitter/Receiver
-**TODO**
+**TODO**  
+
+---
 
 ### 2016 GRADUATED: LBP
+
 #### 困難點
-- 計算3*3 window的addr
-    - 解決方法：和CNN一樣用i, j計算。
-#### performance
-- area: 9167.558560
-- time: 1746430 ns
-- score = 9167.558560 * 1746430 ~= 16000000000
-- rank: B (A: score < 12,000,000,000)
-- 但我猜有rank A，應該是design compiler的問題，面積合成出來小一點就過了。
+- **計算 3×3 window 的 address**
+  - 解決方法：和 CNN 一樣，用 `i, j` 來計算。
+
+#### Performance
+- **Area**: `9167.558560`
+- **Time**: `1,746,430 ns`
+- **Score**: `9167.558560 × 1,746,430 ≈ 16,000,000,000`
+- **Rank**: B (**A 等級條件：Score < 12,000,000,000**)
+- **猜測**：可能因為 Design Compiler 的影響，面積較大，若優化應該能達到 A Rank。
+
+---
 
 ### 2018 UNIVERSITY: LCD CTRL
-#### 困難點
-- 計算 max, min, average 要用 pipeline，其他沒什麼問題。
 
-#### performance
-- area: 119244.789918
-- warning: 有latch，要調整code
-- rank: A(那次的規則是通過gate level simulation就好)
+#### 困難點
+- **計算 max、min、average 需要 pipeline**，其餘部分相對簡單。
+
+#### Performance
+- **Area**: `119,244.789918`
+- **Warning**: 目前有 **latch**，需要調整 code。
+- **Rank**: A （當時規則：通過 Gate-Level Simulation 即可）
+
+---
 
 ### 2019 UNIVERSITY: CONV
-#### Reference
-https://github.com/derek8955/ic_contest/tree/main/2019_univ_CONV
+
+#### 參考資料
+[GitHub Repository](https://github.com/derek8955/ic_contest/tree/main/2019_univ_CONV)
+
 #### 問題
-- 突然發現跑起來是error，不是正確答案，要找時間解決。
+- **目前測試發現運行時發生 error，需進一步 debug。**
+
 #### 困難點
-- 4 bit integer + 16 bit FP 的小數乘法  
-    - 解決方法：用 40 bit 儲存結果，最後取 [35:16]，如果最後一位是 1 就加一，解決進位問題。
-- Padding 和 image 取值的 index  
-    - 解決方法：一開始把圖像都讀進來，再做 padding，然後運算，但後來發現其實可以直接和 testbench 的 RAM 讀寫就好，省面積也省時間，index 取值用 i, j 計算，和寫軟體一樣。  
+- **4-bit Integer + 16-bit Floating Point 小數乘法**
+  - 解決方法：用 **40-bit** 儲存結果，最後取 `[35:16]`，若最後一位是 `1` 就加 `1`，解決進位問題。
+- **Padding 和 Image Index 計算**
+  - 解決方法：
+    1. 最初方案：將圖像完整讀入後再進行 Padding 和運算。
+    2. 優化方案：直接與 Testbench RAM 讀寫，省面積、省時間，並使用 `i, j` 計算 Index，類似軟體設計方式。
 
 #### TODO
-- 還沒有做 synthesis。
+- 尚未進行 **Synthesis**。
+
+---
 
 ### 2021 UNIVERSITY: Geofence
+
 #### 困難點
-- 六個點的位置排序  
-    - 解決方法：以 P0 為聚集點，用 V01, V02, V03, V04, V05 五條向量兩兩做外積，用泡沫排序的概念排序五條向量的順序，排序完就會是順時針的關係。
-- 向量外積  
-    - 解決方法：現在是把向量全部用 wire 列出來，不知道合成面積會不會太多。
+- **六個點的排序**
+  - 解決方法：
+    1. 以 `P0` 為中心點。
+    2. 計算 `V01, V02, V03, V04, V05` 這五條向量。
+    3. 使用「泡沫排序 (Bubble Sort)」概念，透過向量外積排序，使其呈現順時針排列。
+- **向量外積**
+  - 目前將向量全部以 `wire` 方式列出，可能導致面積過大。
 
 #### Performance
-- area: 156566.998499 
-- rank: B (A: area < 22000)
-- 當初寫的時候沒看等級條件，不知道條件只看面積，根本不看時間，所以我都寫組合邏輯，結果面積超級大，有時間要整個重寫。
+- **Area**: `156,566.998499`
+- **Rank**: B (**A 等級條件：Area < 22,000**)
+- **問題**：當初未考慮排名條件，寫成組合邏輯，導致面積過大，需重寫。
+
+---
 
 ### 2022 UNIVERSITY: JAM
+
 #### 困難點
-- 要實現演算法，釐清過程，釐清之後還好，但cycle數跟面積限制都很極限，要謹慎的寫。
+- **演算法設計**：需釐清過程，寫 Code 時需特別注意 Cycle 數與面積限制。
 
 #### Performance
-- area: 12746.765029
-- time: 593427 cycles
-- rank: B (A: area < 10000, time < 600000 cycles)
-- 但我猜有rank A，應該是design compiler的問題。
+- **Area**: `12,746.765029`
+- **Time**: `593,427 cycles`
+- **Rank**: B (**A 等級條件：Area < 10,000, Time < 600,000 cycles**)
+- **猜測**：如果換成tsmc13應該是有 A rank。
 
-## 複賽 (Undergraduate)
+---
+
+## 複賽 (Final Round) - Undergraduate
 
 ### 2019 FPSDC
 **TODO**
+
+---
