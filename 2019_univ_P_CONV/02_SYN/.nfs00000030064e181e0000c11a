@@ -1,0 +1,492 @@
+#======================================================
+#
+# Synopsys Synthesis Scripts (Design Vision dctcl mode)
+#
+#======================================================
+#======================================================
+# (A) Global Parameters
+#======================================================
+set DESIGN "JAM"
+JAM
+set CYCLE 10.0
+10.0
+set INPUT_DLY [expr 0.5*$CYCLE]
+5.0
+set OUTPUT_DLY [expr 0.5*$CYCLE]
+5.0
+#======================================================
+# (B) Read RTL Code
+#======================================================
+# (B-1) analyze + elaborate
+set hdlin_auto_save_templates TRUE
+TRUE
+analyze -f sverilog $DESIGN\.v 
+Running PRESTO HDLC
+Compiling source file ./JAM.v
+Presto compilation completed successfully.
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/dw_foundation.sldb'
+1
+elaborate $DESIGN  
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/standard.sldb'
+  Loading link library 'gtech'
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Running PRESTO HDLC
+Warning:  ./JAM.v:126: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./JAM.v:127: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./JAM.v:128: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./JAM.v:129: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./JAM.v:130: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./JAM.v:131: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./JAM.v:132: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./JAM.v:134: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./JAM.v:177: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./JAM.v:307: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./JAM.v:309: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./JAM.v:313: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 75 in file
+        './JAM.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            89            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 174 in file
+        './JAM.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           185            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 304 in file
+        './JAM.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           305            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine JAM line 48 in file
+                './JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      last_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine JAM line 54 in file
+                './JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        J_reg        | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|        W_reg        | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine JAM line 75 in file
+                './JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      cost6_reg      | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|      cost7_reg      | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|      cost0_reg      | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|      cost1_reg      | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|      cost2_reg      | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|      cost3_reg      | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|      cost4_reg      | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|      cost5_reg      | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine JAM line 146 in file
+                './JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| swap_number_reg_reg | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine JAM line 154 in file
+                './JAM.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| swap_number_const_reg | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+        in routine JAM line 164 in file
+                './JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    mini_idx_reg     | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine JAM line 174 in file
+                './JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      sort_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine JAM line 244 in file
+                './JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     current_reg     | Flip-flop |  10   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine JAM line 256 in file
+                './JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    min_cost_reg     | Flip-flop |  10   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine JAM line 265 in file
+                './JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   match_count_reg   | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine JAM line 276 in file
+                './JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      Valid_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine JAM line 283 in file
+                './JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     MinCost_reg     | Flip-flop |  10   |  Y  | N  | N  | N  | N  | N  | N  |
+|   MatchCount_reg    | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine JAM line 298 in file
+                './JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|     JAM/160      |   8    |    4    |      3       |
+|     JAM/161      |   8    |    4    |      3       |
+|     JAM/162      |   8    |    4    |      3       |
+|     JAM/249      |   8    |    7    |      3       |
+|     JAM/249      |   8    |    7    |      3       |
+|     JAM/249      |   8    |    7    |      3       |
+|     JAM/249      |   8    |    7    |      3       |
+|     JAM/249      |   8    |    7    |      3       |
+|     JAM/249      |   8    |    7    |      3       |
+|     JAM/249      |   8    |    7    |      3       |
+|     JAM/249      |   8    |    7    |      3       |
+======================================================
+Presto compilation completed successfully. (JAM)
+Elaborated 1 design.
+Current design is now 'JAM'.
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+1
+# (B-2) read_sverilog
+#read_sverilog $DESIGN\.v
+# (B-3) set current design
+current_design $DESIGN
+Current design is 'JAM'.
+{JAM}
+link
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+
+  Linking design 'JAM'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  JAM                         /RAID2/COURSE/2025_Spring/DCS/DCS031/2022_univ/02_SYN/JAM.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/2022.03/libraries/syn/dw_foundation.sldb
+
+1
+#======================================================
+#  (C) Global Setting
+#======================================================
+set_operating_conditions -max_library slow -max slow
+Error: Can't find the specified library 'slow' in memory. (UID-131)
+Error: Cannot find operating condition slow in library slow. (UID-1220)
+0
+set_wire_load_model -name tsmc13_wl10 -library slow    
+Error: Can't find the specified library 'slow' in memory. (UID-131)
+Error: Wire load 'tsmc13_wl10' not found. (UID-40)
+0
+#======================================================
+#  (D) Set Design Constraints
+#======================================================
+# (D-1) Setting Clock Constraints
+create_clock -name CLK -period $CYCLE [get_ports CLK] 
+1
+set_dont_touch_network             [get_clocks CLK]
+1
+set_fix_hold                       [get_clocks CLK]
+1
+set_clock_uncertainty       0.1    [get_clocks CLK]
+1
+set_clock_latency           0.5    [get_clocks CLK] 
+1
+# (D-2) Setting in/out Constraints
+set_input_delay  0   -clock CLK [remove_from_collection [all_inputs] [get_ports CLK]] -clock_fall
+1
+set_output_delay 0    -clock CLK [all_outputs]  -clock_fall
+1
+# (D-3) Setting Design Environment
+set_load         1   [all_outputs]
+1
+set_drive        0.1   [all_inputs]
+1
+# (D-4) Setting DRC Constraint
+set_max_fanout 20 [all_inputs]
+1
+# (D-5) Report Clock skew
+report_clock -skew CLK
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Error: Could not read the following target libraries:
+slow.db 
+ (UIO-3)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Information: Updating design information... (UID-85)
+Warning: Design 'JAM' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clock_skew
+Design : JAM
+Version: T-2022.03
+Date   : Tue Mar 18 01:51:24 2025
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+CLK              0.50      0.50      0.50      0.50      0.10      0.10
+1
+check_timing
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+#======================================================
+#  (E) Optimization
+#======================================================
+check_design > Report/$DESIGN\.check
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+set_fix_hold [all_clocks]
+1
+compile_ultra
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Information: Performing power optimization. (PWR-850)
+Error: Could not read the following target libraries:
+slow.db 
+ (UIO-3)
+Error: Could not read the following target libraries:
+slow.db 
+ (UIO-3)
+Error: No target library found. (OPT-1312)
+0
+#uniquify
+#compile
+#======================================================
+#  (F) Output Reports 
+#======================================================
+report_design  >  Report/$DESIGN\.design
+report_resource >  Report/$DESIGN\.resource
+report_timing -max_paths 3 >  Report/$DESIGN\.timing
+report_area >  Report/$DESIGN\.area
+report_power > Report/$DESIGN\.power
+report_clock > Report/$DESIGN\.clock
+report_port >  Report/$DESIGN\.port
+report_power >  Report/$DESIGN\.power
+#report_reference > Report/$DESIGN\.reference
+#======================================================
+#  (G) Change Naming Rule
+#======================================================
+set bus_inference_style "%s\[%d\]"
+%s[%d]
+set bus_naming_style "%s\[%d\]"
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _" -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _[]" -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+define_name_rules name_rule -case_insensitive
+1
+change_names -hierarchy -rules name_rule
+1
+#======================================================
+#  (H) Output Results
+#======================================================
+set verilogout_higher_designs_first true
+true
+write -format verilog -output Netlist/$DESIGN\_SYN.v -hierarchy
+Writing verilog file '/RAID2/COURSE/2025_Spring/DCS/DCS031/2022_univ/02_SYN/Netlist/JAM_SYN.v'.
+Warning: Module JAM contains unmapped components.  The output netlist might not be read back into the system. (VO-12)
+1
+write -format ddc     -hierarchy -output $DESIGN\_SYN.ddc
+Writing ddc file 'JAM_SYN.ddc'.
+1
+write_sdf -version 3.0 -context verilog -load_delay cell Netlist/$DESIGN\_SYN.sdf -significant_digits 6
+Warning: Using 'user-specified' sdf time scale of '1.000000 ns'. (WT-9)
+Information: Writing timing information to file '/RAID2/COURSE/2025_Spring/DCS/DCS031/2022_univ/02_SYN/Netlist/JAM_SYN.sdf'. (WT-3)
+Warning: Design contains black-box components.  These cells will have no timing information. (WT-7)
+1
+write_sdc Netlist/$DESIGN\_SYN.sdc
+1
+#======================================================
+#  (I) Finish and Quit
+#======================================================
+report_area
+ 
+****************************************
+Report : area
+Design : JAM
+Version: T-2022.03
+Date   : Tue Mar 18 01:51:24 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'JAM' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    gtech (File: /usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db)
+
+Number of ports:                          868
+Number of nets:                          3872
+Number of cells:                         1949
+Number of combinational cells:           1242
+Number of sequential cells:               634
+Number of macros/black boxes:               0
+Number of buf/inv:                        337
+Number of references:                      38
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1
+report_timing 
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : JAM
+Version: T-2022.03
+Date   : Tue Mar 18 01:51:24 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: dw_foundation.sldb
+Wire Load Model Mode: top
+
+  Startpoint: J_reg_0_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: J[0] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  J_reg_0_/clocked_on (**SEQGEN**)         0.00       0.50 r
+  J_reg_0_/Q (**SEQGEN**)                  0.00       0.50 r
+  J[0] (out)                               0.00       0.50 r
+  data arrival time                                   0.50
+
+  clock CLK (fall edge)                    5.00       5.00
+  clock network delay (ideal)              0.50       5.50
+  clock uncertainty                       -0.10       5.40
+  output external delay                    0.00       5.40
+  data required time                                  5.40
+  -----------------------------------------------------------
+  data required time                                  5.40
+  data arrival time                                  -0.50
+  -----------------------------------------------------------
+  slack (MET)                                         4.90
+
+
+1
+exit
+Memory usage for this session 106 Mbytes.
+Memory usage for this session including child processes 106 Mbytes.
+CPU usage for this session 3 seconds ( 0.00 hours ).
+Elapsed time for this session 5 seconds ( 0.00 hours ).
+
+Thank you...
+

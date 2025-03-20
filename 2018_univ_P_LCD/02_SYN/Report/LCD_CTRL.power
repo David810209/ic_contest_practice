@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : LCD_CTRL
+Version: T-2022.03
+Date   : Thu Mar 20 12:01:22 2025
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/umc018/Synthesis/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   3.1609 mW   (96%)
+  Net Switching Power  = 115.1375 uW    (4%)
+                         ---------
+Total Dynamic Power    =   3.2761 mW  (100%)
+
+Cell Leakage Power     =   6.5971 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      3.1348            0.0000            0.0000            0.0000  (   0.00%)  i
+register       9.6657e-03        8.6260e-03        3.0428e+06            3.1562  (  96.15%)
+sequential     7.8098e-04        4.3517e-05        1.8275e+04        8.4277e-04  (   0.03%)
+combinational  1.5651e-02            0.1065        3.5360e+06            0.1257  (   3.83%)
+--------------------------------------------------------------------------------------------------
+Total              3.1609 mW         0.1151 mW     6.5971e+06 pW         3.2827 mW
+1
