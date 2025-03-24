@@ -1,0 +1,26 @@
+{
+    "fsdbDumpDesign$$": [
+        "fsdbDumpDesign0x240x24",
+        "cfx32",
+        "module",
+        1
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        2
+    ],
+    "testfixture": [
+        "testfixture",
+        "JRBuQ",
+        "module",
+        3
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        4
+    ]
+}

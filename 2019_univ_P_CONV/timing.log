@@ -1,0 +1,79 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONV
+Version: T-2022.03
+Date   : Tue Mar 25 01:48:30 2025
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: idata[9] (input port clocked by clk)
+  Endpoint: temp_sum_reg[35]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    5.00       5.50 r
+  idata[9] (in)                                           0.02       5.52 r
+  U558/Y (AND2X8)                                         0.19       5.71 r
+  mult_165/a[9] (CONV_DW_mult_tc_2)                       0.00       5.71 r
+  mult_165/U1210/Y (BUFX12)                               0.16       5.86 r
+  mult_165/U1191/Y (XNOR2X2)                              0.20       6.06 f
+  mult_165/U2135/Y (OAI22X4)                              0.23       6.30 r
+  mult_165/U2062/CO (ADDFHX4)                             0.38       6.68 r
+  mult_165/U1308/S (ADDFHX2)                              0.32       7.00 f
+  mult_165/U1348/S (ADDFHX4)                              0.27       7.27 r
+  mult_165/U2266/S (ADDFHX4)                              0.30       7.57 f
+  mult_165/U1597/Y (OR2X8)                                0.22       7.79 f
+  mult_165/U1672/Y (NAND2X8)                              0.09       7.88 r
+  mult_165/U1982/Y (INVX4)                                0.06       7.94 f
+  mult_165/U1324/Y (NAND2X4)                              0.07       8.01 r
+  mult_165/U1315/Y (NAND2X4)                              0.08       8.09 f
+  mult_165/U1980/Y (AOI21X4)                              0.11       8.20 r
+  mult_165/U1979/Y (OA21X4)                               0.17       8.37 r
+  mult_165/U1898/Y (OAI2BB1X4)                            0.11       8.48 f
+  mult_165/U1146/Y (INVX12)                               0.13       8.61 r
+  mult_165/U1169/Y (OR2X4)                                0.16       8.77 r
+  mult_165/U2122/Y (NAND2X6)                              0.06       8.83 f
+  mult_165/U2268/Y (XNOR2X4)                              0.14       8.97 r
+  mult_165/product[32] (CONV_DW_mult_tc_2)                0.00       8.97 r
+  add_172/B[32] (CONV_DW01_add_5)                         0.00       8.97 r
+  add_172/U548/Y (CLKAND2X12)                             0.23       9.21 r
+  add_172/U693/Y (AOI21X4)                                0.11       9.32 f
+  add_172/U442/Y (CLKINVX1)                               0.16       9.47 r
+  add_172/U513/Y (CLKINVX6)                               0.12       9.59 f
+  add_172/U663/Y (OAI21X2)                                0.18       9.77 r
+  add_172/U643/Y (AO21X4)                                 0.17       9.94 r
+  add_172/U512/Y (XOR2X4)                                 0.12      10.06 f
+  add_172/SUM[35] (CONV_DW01_add_5)                       0.00      10.06 f
+  U399/Y (OAI2BB2X4)                                      0.18      10.23 f
+  temp_sum_reg[35]/D (DFFHQX4)                            0.00      10.23 f
+  data arrival time                                                 10.23
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  temp_sum_reg[35]/CK (DFFHQX4)                           0.00      10.40 r
+  library setup time                                     -0.17      10.23
+  data required time                                                10.23
+  --------------------------------------------------------------------------
+  data required time                                                10.23
+  data arrival time                                                -10.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

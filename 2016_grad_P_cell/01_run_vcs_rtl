@@ -1,0 +1,1 @@
+vcs -full64 -R -sverilog tb.v LBP.v +access+r +neg_tchk +vcs+fsdbon +fsdbfile+LBP.fsdb +notimingchecks

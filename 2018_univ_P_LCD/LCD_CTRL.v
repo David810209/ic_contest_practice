@@ -183,25 +183,25 @@ always @(posedge clk) begin
         if(counter == 0) begin
             min_val <= image[tmp_idx0];
             max_val <= image[tmp_idx0];
-            accum_val = accum_val + image[tmp_idx0];
+            accum_val <= accum_val + image[tmp_idx0];
             counter <= counter + 1;
         end
         else if(counter == 1) begin
             if(image[tmp_idx1] < min_val) min_val <= image[tmp_idx1];
             if(image[tmp_idx1] > max_val) max_val <= image[tmp_idx1];
-            accum_val = accum_val + image[tmp_idx1];
+            accum_val <= accum_val + image[tmp_idx1];
             counter <= counter + 1;
         end
         else if(counter == 2)begin
             if(image[tmp_idx2] < min_val) min_val <= image[tmp_idx2];
             if(image[tmp_idx2] > max_val) max_val <= image[tmp_idx2];
-            accum_val = accum_val + image[tmp_idx2];
+            accum_val <= accum_val + image[tmp_idx2];
             counter <= counter + 1;
         end
         else if(counter == 3)begin
             if(image[tmp_idx3] < min_val) min_val <= image[tmp_idx3];
             if(image[tmp_idx3] > max_val) max_val <= image[tmp_idx3];
-            accum_val = accum_val + image[tmp_idx3];
+            accum_val <= accum_val + image[tmp_idx3];
             counter <= counter + 1;
             calc_done <= 1;
         end

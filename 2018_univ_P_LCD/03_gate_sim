@@ -1,0 +1,1 @@
+vcs -full64 -R -sverilog tb.v LCD_CTRL_syn.v +define+SDF +access+r +neg_tchk +vcs+fsdbon +fsdb+mda +fsdbfile+LCD_CTRL.fsdb -v /RAID2/COURSE/2025_Spring/DCS/DCSTA01/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v +maxdelays +define+tb1

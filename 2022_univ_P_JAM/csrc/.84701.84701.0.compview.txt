@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1742834170.942947679, "rt":1.46, "ut":0.35, "st":0.24}}
+{"vcselab":{"timestamp_begin":1742834172.476191086, "rt":0.81, "ut":0.20, "st":0.05}}
+{"link":{"timestamp_begin":1742834173.375169949, "rt":0.65, "ut":0.21, "st":0.28}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1742834170.445920723}
+{"VCS_COMP_START_TIME": 1742834170.445920723}
+{"VCS_COMP_END_TIME": 1742834185.743559099}
+{"VCS_USER_OPTIONS": "-full64 -R -sverilog tb.sv JAM_syn.v +define+SDF +access+r +neg_tchk +vcs+fsdbon +fsdb+mda +fsdbfile+JAM.fsdb -v /RAID2/COURSE/2025_Spring/DCS/DCSTA01/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v +maxdelays"}
+{"vcs1": {"peak_mem": 350572}}
+{"stitch_vcselab": {"peak_mem": 225712}}

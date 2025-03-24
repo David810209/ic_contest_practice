@@ -1,0 +1,614 @@
+{
+    "fsdbDumpDesign$$": [
+        "fsdbDumpDesign0x240x24",
+        "cfx32",
+        "module",
+        1
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        2
+    ],
+    "testfixture": [
+        "testfixture",
+        "JRBuQ",
+        "module",
+        3
+    ],
+    "geofence_DW01_sub_0": [
+        "geofence_DW01_sub_0",
+        "NSdT8",
+        "module",
+        4
+    ],
+    "geofence_DW01_sub_1": [
+        "geofence_DW01_sub_1",
+        "PVGck",
+        "module",
+        5
+    ],
+    "geofence_DW01_sub_2": [
+        "geofence_DW01_sub_2",
+        "sbIjJ",
+        "module",
+        6
+    ],
+    "geofence_DW01_sub_3": [
+        "geofence_DW01_sub_3",
+        "grbeR",
+        "module",
+        7
+    ],
+    "geofence_DW01_sub_4": [
+        "geofence_DW01_sub_4",
+        "kv4UV",
+        "module",
+        8
+    ],
+    "geofence_DW01_sub_5": [
+        "geofence_DW01_sub_5",
+        "jiN24",
+        "module",
+        9
+    ],
+    "geofence_DW01_sub_6": [
+        "geofence_DW01_sub_6",
+        "M5hUD",
+        "module",
+        10
+    ],
+    "geofence_DW01_sub_7": [
+        "geofence_DW01_sub_7",
+        "TymNf",
+        "module",
+        11
+    ],
+    "geofence_DW01_sub_8": [
+        "geofence_DW01_sub_8",
+        "k2CbN",
+        "module",
+        12
+    ],
+    "geofence_DW01_sub_9": [
+        "geofence_DW01_sub_9",
+        "rKxbp",
+        "module",
+        13
+    ],
+    "geofence_DW01_sub_10": [
+        "geofence_DW01_sub_10",
+        "aqKQL",
+        "module",
+        14
+    ],
+    "geofence_DW01_sub_11": [
+        "geofence_DW01_sub_11",
+        "F134E",
+        "module",
+        15
+    ],
+    "geofence_DW01_sub_12": [
+        "geofence_DW01_sub_12",
+        "R2Nc4",
+        "module",
+        16
+    ],
+    "geofence_DW01_sub_13": [
+        "geofence_DW01_sub_13",
+        "LV67P",
+        "module",
+        17
+    ],
+    "geofence_DW01_sub_14": [
+        "geofence_DW01_sub_14",
+        "JIyky",
+        "module",
+        18
+    ],
+    "geofence_DW01_sub_15": [
+        "geofence_DW01_sub_15",
+        "pAei3",
+        "module",
+        19
+    ],
+    "geofence_DW01_sub_16": [
+        "geofence_DW01_sub_16",
+        "nZqpE",
+        "module",
+        20
+    ],
+    "geofence_DW01_sub_17": [
+        "geofence_DW01_sub_17",
+        "ZBRgx",
+        "module",
+        21
+    ],
+    "geofence_DW01_sub_18": [
+        "geofence_DW01_sub_18",
+        "pLA3r",
+        "module",
+        22
+    ],
+    "geofence_DW01_sub_19": [
+        "geofence_DW01_sub_19",
+        "swtcC",
+        "module",
+        23
+    ],
+    "geofence_DW01_sub_20": [
+        "geofence_DW01_sub_20",
+        "jbznt",
+        "module",
+        24
+    ],
+    "geofence_DW01_sub_21": [
+        "geofence_DW01_sub_21",
+        "M4qUQ",
+        "module",
+        25
+    ],
+    "geofence_DW01_sub_22": [
+        "geofence_DW01_sub_22",
+        "rUiJt",
+        "module",
+        26
+    ],
+    "geofence_DW01_sub_23": [
+        "geofence_DW01_sub_23",
+        "eCE40",
+        "module",
+        27
+    ],
+    "geofence_DW01_sub_25": [
+        "geofence_DW01_sub_25",
+        "bN4iZ",
+        "module",
+        28
+    ],
+    "geofence_DW01_sub_26": [
+        "geofence_DW01_sub_26",
+        "hUySj",
+        "module",
+        29
+    ],
+    "geofence_DW01_sub_27": [
+        "geofence_DW01_sub_27",
+        "rFJgs",
+        "module",
+        30
+    ],
+    "geofence_DW01_sub_28": [
+        "geofence_DW01_sub_28",
+        "rYBr7",
+        "module",
+        31
+    ],
+    "geofence_DW01_sub_29": [
+        "geofence_DW01_sub_29",
+        "f4RV9",
+        "module",
+        32
+    ],
+    "geofence_DW01_sub_30": [
+        "geofence_DW01_sub_30",
+        "fURUR",
+        "module",
+        33
+    ],
+    "geofence_DW01_sub_31": [
+        "geofence_DW01_sub_31",
+        "btx6H",
+        "module",
+        34
+    ],
+    "geofence_DW_mult_tc_13": [
+        "geofence_DW_mult_tc_13",
+        "A1Yms",
+        "module",
+        35
+    ],
+    "geofence_DW_mult_tc_12": [
+        "geofence_DW_mult_tc_12",
+        "unKc7",
+        "module",
+        36
+    ],
+    "geofence_DW01_sub_38": [
+        "geofence_DW01_sub_38",
+        "GQTTv",
+        "module",
+        37
+    ],
+    "geofence_DW_mult_tc_1": [
+        "geofence_DW_mult_tc_1",
+        "usZa2",
+        "module",
+        38
+    ],
+    "geofence_DW_mult_tc_0": [
+        "geofence_DW_mult_tc_0",
+        "GnBth",
+        "module",
+        39
+    ],
+    "geofence_DW01_sub_32": [
+        "geofence_DW01_sub_32",
+        "hW7MH",
+        "module",
+        40
+    ],
+    "geofence_DW_mult_tc_3": [
+        "geofence_DW_mult_tc_3",
+        "RTnSW",
+        "module",
+        41
+    ],
+    "geofence_DW_mult_tc_2": [
+        "geofence_DW_mult_tc_2",
+        "hydcT",
+        "module",
+        42
+    ],
+    "geofence_DW01_sub_33": [
+        "geofence_DW01_sub_33",
+        "g1K48",
+        "module",
+        43
+    ],
+    "geofence_DW_mult_tc_5": [
+        "geofence_DW_mult_tc_5",
+        "BxYT9",
+        "module",
+        44
+    ],
+    "geofence_DW_mult_tc_4": [
+        "geofence_DW_mult_tc_4",
+        "sa6Cs",
+        "module",
+        45
+    ],
+    "geofence_DW01_sub_34": [
+        "geofence_DW01_sub_34",
+        "w8c6m",
+        "module",
+        46
+    ],
+    "geofence_DW_mult_tc_7": [
+        "geofence_DW_mult_tc_7",
+        "E7f30",
+        "module",
+        47
+    ],
+    "geofence_DW_mult_tc_6": [
+        "geofence_DW_mult_tc_6",
+        "NAqnM",
+        "module",
+        48
+    ],
+    "geofence_DW01_sub_35": [
+        "geofence_DW01_sub_35",
+        "Khc1p",
+        "module",
+        49
+    ],
+    "geofence_DW_mult_tc_9": [
+        "geofence_DW_mult_tc_9",
+        "VgCwt",
+        "module",
+        50
+    ],
+    "geofence_DW_mult_tc_8": [
+        "geofence_DW_mult_tc_8",
+        "nKsCY",
+        "module",
+        51
+    ],
+    "geofence_DW01_sub_36": [
+        "geofence_DW01_sub_36",
+        "CCaYN",
+        "module",
+        52
+    ],
+    "geofence_DW_mult_tc_11": [
+        "geofence_DW_mult_tc_11",
+        "LLH71",
+        "module",
+        53
+    ],
+    "geofence_DW_mult_tc_10": [
+        "geofence_DW_mult_tc_10",
+        "PvRAP",
+        "module",
+        54
+    ],
+    "geofence_DW01_sub_37": [
+        "geofence_DW01_sub_37",
+        "EssbH",
+        "module",
+        55
+    ],
+    "geofence": [
+        "geofence",
+        "bbBN4",
+        "module",
+        56
+    ],
+    "INVXL": [
+        "INVXL",
+        "FsUsG",
+        "module",
+        57
+    ],
+    "AND3X6": [
+        "AND3X6",
+        "QQRBc",
+        "module",
+        58
+    ],
+    "AOI21X1": [
+        "AOI21X1",
+        "MABjN",
+        "module",
+        59
+    ],
+    "AOI211XL": [
+        "AOI211XL",
+        "Wk0jI",
+        "module",
+        60
+    ],
+    "AOI22XL": [
+        "AOI22XL",
+        "Kx8dR",
+        "module",
+        61
+    ],
+    "AOI221XL": [
+        "AOI221XL",
+        "BUsfE",
+        "module",
+        62
+    ],
+    "AOI222XL": [
+        "AOI222XL",
+        "G6ems",
+        "module",
+        63
+    ],
+    "AOI2BB1XL": [
+        "AOI2BB1XL",
+        "uZF5n",
+        "module",
+        64
+    ],
+    "AOI2BB2XL": [
+        "AOI2BB2XL",
+        "m7gfL",
+        "module",
+        65
+    ],
+    "AO21XL": [
+        "AO21XL",
+        "LYkvL",
+        "module",
+        66
+    ],
+    "AO22XL": [
+        "AO22XL",
+        "t0Hd0",
+        "module",
+        67
+    ],
+    "NAND2XL": [
+        "NAND2XL",
+        "C4bJV",
+        "module",
+        68
+    ],
+    "NAND3X1": [
+        "NAND3X1",
+        "n5kPb",
+        "module",
+        69
+    ],
+    "NAND4X6": [
+        "NAND4X6",
+        "nBViL",
+        "module",
+        70
+    ],
+    "NAND2BXL": [
+        "NAND2BXL",
+        "B7bZD",
+        "module",
+        71
+    ],
+    "NAND3BX1": [
+        "NAND3BX1",
+        "Nx9nH",
+        "module",
+        72
+    ],
+    "NOR2XL": [
+        "NOR2XL",
+        "UiF6Q",
+        "module",
+        73
+    ],
+    "NOR3XL": [
+        "NOR3XL",
+        "qsiak",
+        "module",
+        74
+    ],
+    "NOR2BX4": [
+        "NOR2BX4",
+        "VVwPc",
+        "module",
+        75
+    ],
+    "NOR3BX1": [
+        "NOR3BX1",
+        "YjQnK",
+        "module",
+        76
+    ],
+    "OR2XL": [
+        "OR2XL",
+        "Ljmab",
+        "module",
+        77
+    ],
+    "OR3X1": [
+        "OR3X1",
+        "LacGK",
+        "module",
+        78
+    ],
+    "OAI21XL": [
+        "OAI21XL",
+        "nqk2t",
+        "module",
+        79
+    ],
+    "OAI211XL": [
+        "OAI211XL",
+        "i85VS",
+        "module",
+        80
+    ],
+    "OAI22XL": [
+        "OAI22XL",
+        "z4Vhc",
+        "module",
+        81
+    ],
+    "OAI221XL": [
+        "OAI221XL",
+        "GYQvg",
+        "module",
+        82
+    ],
+    "OAI222XL": [
+        "OAI222XL",
+        "yKCjh",
+        "module",
+        83
+    ],
+    "OAI32XL": [
+        "OAI32XL",
+        "A3I3t",
+        "module",
+        84
+    ],
+    "OAI2BB1XL": [
+        "OAI2BB1XL",
+        "Hevxk",
+        "module",
+        85
+    ],
+    "OAI2BB2XL": [
+        "OAI2BB2XL",
+        "eKshN",
+        "module",
+        86
+    ],
+    "OA21X4": [
+        "OA21X4",
+        "tGNNe",
+        "module",
+        87
+    ],
+    "OA22XL": [
+        "OA22XL",
+        "QRvrF",
+        "module",
+        88
+    ],
+    "XOR2XL": [
+        "XOR2XL",
+        "QZEIi",
+        "module",
+        89
+    ],
+    "XOR3X2": [
+        "XOR3X2",
+        "wxYax",
+        "module",
+        90
+    ],
+    "XNOR2XL": [
+        "XNOR2XL",
+        "rpKsx",
+        "module",
+        91
+    ],
+    "XNOR3X2": [
+        "XNOR3X2",
+        "dEEHT",
+        "module",
+        92
+    ],
+    "CLKBUFX8": [
+        "CLKBUFX8",
+        "I1q3L",
+        "module",
+        93
+    ],
+    "CLKAND2X8": [
+        "CLKAND2X8",
+        "uLUmV",
+        "module",
+        94
+    ],
+    "ADDFXL": [
+        "ADDFXL",
+        "D1wVr",
+        "module",
+        95
+    ],
+    "CMPR22X2": [
+        "CMPR22X2",
+        "EcMep",
+        "module",
+        96
+    ],
+    "CMPR32X2": [
+        "CMPR32X2",
+        "W7Pdv",
+        "module",
+        97
+    ],
+    "CMPR42X2": [
+        "CMPR42X2",
+        "A5hUU",
+        "module",
+        98
+    ],
+    "DFFX4": [
+        "DFFX4",
+        "VDQ4z",
+        "module",
+        99
+    ],
+    "DFFQX4": [
+        "DFFQX4",
+        "MPeBq",
+        "module",
+        100
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        101
+    ],
+    "udp_dff": [
+        "udp_dff",
+        "exIG1",
+        "udp",
+        102
+    ]
+}

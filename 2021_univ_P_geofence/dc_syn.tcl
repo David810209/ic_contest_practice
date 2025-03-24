@@ -22,3 +22,4 @@ write -format verilog -hierarchy -output geofence_syn.v
 report_area > area.log
 report_timing > timing.log
 report_qor   >  geofence_syn.qor
+exit

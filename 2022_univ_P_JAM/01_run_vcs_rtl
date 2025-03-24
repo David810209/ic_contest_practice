@@ -1,0 +1,1 @@
+vcs -full64 -R -sverilog tb.sv JAM.v +access+r +neg_tchk +vcs+fsdbon +fsdbfile+JAM.fsdb +notimingchecks

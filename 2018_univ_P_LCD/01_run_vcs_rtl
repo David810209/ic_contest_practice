@@ -1,0 +1,1 @@
+vcs -full64 -R -sverilog tb.v LCD_CTRL.v +access+r +neg_tchk +vcs+fsdbon +fsdbfile+LCD_CTRL.fsdb +notimingchecks +define+tb3
