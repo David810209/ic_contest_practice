@@ -1,1 +1,0 @@
-rm -rf *.fsdb ./csrc *.log simv* *.sdf.X *.key ./nWaveLog ./verdiLog *.conf *.rc *.log  ./Netlist/*.* ./Report/*.* *.log alib* *.svf dwsvf* *.ddc *.pvl *.syn *.mr
