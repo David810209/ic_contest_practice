@@ -1,0 +1,1 @@
+vcs -full64 -R -sverilog tb.sv CONVEX_syn.v +define+P3  +define+SDF +access+r +neg_tchk +vcs+fsdbon +fsdb+mda +fsdbfile+JAM.fsdb -v /RAID2/COURSE/2025_Spring/DCS/DCSTA01/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v +maxdelays

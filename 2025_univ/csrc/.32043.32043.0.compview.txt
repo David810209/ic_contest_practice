@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1742990874.319688783, "rt":1.33, "ut":0.39, "st":0.28}}
+{"vcselab":{"timestamp_begin":1742990875.751774675, "rt":0.61, "ut":0.17, "st":0.05}}
+{"link":{"timestamp_begin":1742990876.459923894, "rt":0.68, "ut":0.19, "st":0.29}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1742990873.581592338}
+{"VCS_COMP_START_TIME": 1742990873.581592338}
+{"VCS_COMP_END_TIME": 1742990878.710860030}
+{"VCS_USER_OPTIONS": "-full64 -R -sverilog tb.sv CONVEX.v +define+P1 +access+r +neg_tchk +vcs+fsdbon +fsdbfile+CONVEX.fsdb +notimingchecks"}
+{"vcs1": {"peak_mem": 332560}}
+{"stitch_vcselab": {"peak_mem": 215060}}

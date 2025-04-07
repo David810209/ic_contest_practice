@@ -1,0 +1,1 @@
+vcs -full64 -R -sverilog tb.sv CONVEX.v +define+P3  +access+r +neg_tchk +vcs+fsdbon +fsdbfile+CONVEX.fsdb +notimingchecks

@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1742991473.115454979, "rt":0.34, "ut":0.10, "st":0.07}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1742991472.325581896}
+{"VCS_COMP_START_TIME": 1742991472.325581896}
+{"VCS_COMP_END_TIME": 1742991474.989251969}
+{"VCS_USER_OPTIONS": "-full64 -R -sverilog tb.sv CONVEX_syn.v +define+P3 +define+SDF +access+r +neg_tchk +vcs+fsdbon +fsdb+mda +fsdbfile+JAM.fsdb -v /RAID2/COURSE/2025_Spring/DCS/DCSTA01/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v +maxdelays"}

@@ -1,0 +1,79 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONVEX
+Version: T-2022.03
+Date   : Wed Mar 26 20:15:34 2025
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: PT_X_reg[0][7]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: PT_X_reg[2][9]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONVEX             tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  PT_X_reg[0][7]/CK (DFFQX2)               0.00       0.50 r
+  PT_X_reg[0][7]/Q (DFFQX2)                0.37       0.87 f
+  U5053/Y (INVX3)                          0.43       1.30 r
+  U8106/Y (OAI22X1)                        0.29       1.58 f
+  U6490/Y (NOR4X2)                         0.28       1.87 r
+  U5455/Y (NAND3X2)                        0.25       2.12 f
+  U8115/Y (NAND2X2)                        0.20       2.32 r
+  U5136/Y (OA21X2)                         0.25       2.57 r
+  U4952/Y (NAND3X4)                        0.15       2.72 f
+  U7355/Y (AOI21X4)                        0.21       2.93 r
+  U8120/Y (XOR2X4)                         0.20       3.13 f
+  U8121/Y (BUFX20)                         0.19       3.32 f
+  U8223/Y (INVX6)                          0.25       3.57 r
+  U6782/Y (XNOR2X1)                        0.33       3.90 f
+  U4497/Y (OAI22X1)                        0.47       4.37 r
+  U8443/S (ADDFHX2)                        0.44       4.81 f
+  U6831/S (ADDFHX2)                        0.33       5.14 r
+  U5167/S (ADDFHX2)                        0.41       5.55 r
+  U4423/Y (OR2X4)                          0.24       5.79 r
+  U4414/Y (NAND2X4)                        0.11       5.90 f
+  U6871/Y (OR2X2)                          0.26       6.16 f
+  U5532/Y (NAND2X4)                        0.11       6.27 r
+  U5531/Y (NOR2X6)                         0.07       6.34 f
+  U8457/Y (OAI21X4)                        0.16       6.50 r
+  U6233/Y (NOR2X8)                         0.10       6.60 f
+  U5150/Y (NAND2X6)                        0.07       6.68 r
+  U5525/Y (NAND2X6)                        0.09       6.77 f
+  U7351/Y (NOR2X8)                         0.15       6.92 r
+  U8459/Y (AOI31X4)                        0.28       7.20 f
+  U5149/Y (BUFX12)                         0.19       7.39 f
+  U7093/Y (NOR2XL)                         0.39       7.78 r
+  U5516/Y (AOI211X1)                       0.21       7.98 f
+  U4134/Y (OAI21X1)                        0.22       8.20 r
+  PT_X_reg[2][9]/D (DFFHQX2)               0.00       8.20 r
+  data arrival time                                   8.20
+
+  clock CLK (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.50       8.50
+  clock uncertainty                       -0.10       8.40
+  PT_X_reg[2][9]/CK (DFFHQX2)              0.00       8.40 r
+  library setup time                      -0.19       8.21
+  data required time                                  8.21
+  -----------------------------------------------------------
+  data required time                                  8.21
+  data arrival time                                  -8.20
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
