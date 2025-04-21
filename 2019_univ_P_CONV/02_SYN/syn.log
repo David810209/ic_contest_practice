@@ -1,0 +1,1010 @@
+#======================================================
+#
+# Synopsys Synthesis Scripts (Design Vision dctcl mode)
+#
+#======================================================
+#======================================================
+# (A) Global Parameters
+#======================================================
+set DESIGN "CONV"
+CONV
+set CYCLE 10.0
+10.0
+set INPUT_DLY [expr 0.5*$CYCLE]
+5.0
+set OUTPUT_DLY [expr 0.5*$CYCLE]
+5.0
+#======================================================
+# (B) Read RTL Code
+#======================================================
+# (B-1) analyze + elaborate
+set hdlin_auto_save_templates TRUE
+TRUE
+analyze -f sverilog $DESIGN\.v 
+Running PRESTO HDLC
+Compiling source file ./CONV.v
+Presto compilation completed successfully.
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/umc018/Synthesis/slow.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+1
+elaborate $DESIGN  
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ./CONV.v:58: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./CONV.v:59: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./CONV.v:61: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./CONV.v:62: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./CONV.v:130: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./CONV.v:131: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./CONV.v:132: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./CONV.v:133: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./CONV.v:135: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./CONV.v:136: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./CONV.v:137: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./CONV.v:138: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./CONV.v:153: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./CONV.v:154: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./CONV.v:155: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./CONV.v:156: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./CONV.v:157: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./CONV.v:175: signed to unsigned part selection occurs. (VER-318)
+Warning:  ./CONV.v:244: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./CONV.v:245: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 53 in file
+        './CONV.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            56            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 107 in file
+        './CONV.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           110            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 127 in file
+        './CONV.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           129            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 147 in file
+        './CONV.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           148            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 204 in file
+        './CONV.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           207            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine CONV line 47 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        S_reg        | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 71 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      busy_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 84 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  conv_counter_reg   | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 94 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      L0_j_reg       | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|      L0_i_reg       | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 107 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      iaddr_reg      | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 147 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     WEIGHT_reg      | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 167 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    temp_sum_reg     | Flip-flop |  40   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 184 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      L1_j_reg       | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|      L1_i_reg       | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 194 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| pooling_counter_reg | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 204 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    caddr_rd_reg     | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 220 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       crd_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 226 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     max_val_reg     | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 242 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    cdata_wr_reg     | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 252 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      csel_reg       | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 264 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       cwr_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CONV line 274 in file
+                './CONV.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    caddr_wr_reg     | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CONV)
+Elaborated 1 design.
+Current design is now 'CONV'.
+1
+# (B-2) read_sverilog
+#read_sverilog $DESIGN\.v
+# (B-3) set current design
+current_design $DESIGN
+Current design is 'CONV'.
+{CONV}
+link
+
+  Linking design 'CONV'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  CONV                        /RAID2/COURSE/2025_Spring/DCS/DCS031/2019_univ/02_SYN/CONV.db
+  slow (library)              /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/umc018/Synthesis/slow.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+#======================================================
+#  (C) Global Setting
+#======================================================
+# set_operating_conditions -max_library slow -max slow
+# set_wire_load_model -name tsmc13_wl10 -library slow    
+#======================================================
+#  (D) Set Design Constraints
+#======================================================
+# (D-1) Setting Clock Constraints
+create_clock -name CLK -period $CYCLE [get_ports CLK] 
+Warning: Can't find port 'CLK' in design 'CONV'. (UID-95)
+Error: Value for list 'source_objects' must have 1 elements. (CMD-036)
+0
+set_dont_touch_network             [get_clocks CLK]
+Warning: Can't find clock 'CLK' in design 'CONV'. (UID-95)
+Error: Value for list '<object_list>' must have 1 elements. (CMD-036)
+0
+set_fix_hold                       [get_clocks CLK]
+Warning: Can't find clock 'CLK' in design 'CONV'. (UID-95)
+Error: Value for list '<clock_list>' must have 1 elements. (CMD-036)
+0
+set_clock_uncertainty       0.1    [get_clocks CLK]
+Warning: Can't find clock 'CLK' in design 'CONV'. (UID-95)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+0
+set_clock_latency           0.5    [get_clocks CLK] 
+Warning: Can't find clock 'CLK' in design 'CONV'. (UID-95)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+0
+# (D-2) Setting in/out Constraints
+set_input_delay  0   -clock CLK [remove_from_collection [all_inputs] [get_ports CLK]] -clock_fall
+Warning: Can't find port 'CLK' in design 'CONV'. (UID-95)
+Warning: Can't find clock 'CLK' in design 'CONV'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+0
+set_output_delay 0    -clock CLK [all_outputs]  -clock_fall
+Warning: Can't find clock 'CLK' in design 'CONV'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+0
+# (D-3) Setting Design Environment
+set_load         1   [all_outputs]
+1
+set_drive        0.1   [all_inputs]
+1
+# (D-4) Setting DRC Constraint
+set_max_fanout 20 [all_inputs]
+1
+# (D-5) Report Clock skew
+report_clock -skew CLK
+Warning: Can't find clock 'CLK' in design 'CONV'. (UID-95)
+Error: Value for list 'clock_list' must have 1 elements. (CMD-036)
+0
+check_timing
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Updating design information... (UID-85)
+Warning: Design 'CONV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Warning: The following end-points are not constrained for maximum delay.
+
+End point
+---------------
+L0_i_reg[0]/next_state
+L0_i_reg[0]/synch_enable
+L0_i_reg[1]/next_state
+L0_i_reg[1]/synch_enable
+L0_i_reg[2]/next_state
+L0_i_reg[2]/synch_enable
+L0_i_reg[3]/next_state
+L0_i_reg[3]/synch_enable
+L0_i_reg[4]/next_state
+L0_i_reg[4]/synch_enable
+L0_i_reg[5]/next_state
+L0_i_reg[5]/synch_enable
+L0_j_reg[0]/next_state
+L0_j_reg[0]/synch_enable
+L0_j_reg[1]/next_state
+L0_j_reg[1]/synch_enable
+L0_j_reg[2]/next_state
+L0_j_reg[2]/synch_enable
+L0_j_reg[3]/next_state
+L0_j_reg[3]/synch_enable
+L0_j_reg[4]/next_state
+L0_j_reg[4]/synch_enable
+L0_j_reg[5]/next_state
+L0_j_reg[5]/synch_enable
+L1_i_reg[0]/next_state
+L1_i_reg[0]/synch_enable
+L1_i_reg[1]/next_state
+L1_i_reg[1]/synch_enable
+L1_i_reg[2]/next_state
+L1_i_reg[2]/synch_enable
+L1_i_reg[3]/next_state
+L1_i_reg[3]/synch_enable
+L1_i_reg[4]/next_state
+L1_i_reg[4]/synch_enable
+L1_i_reg[5]/next_state
+L1_i_reg[5]/synch_enable
+L1_j_reg[0]/next_state
+L1_j_reg[0]/synch_enable
+L1_j_reg[1]/next_state
+L1_j_reg[1]/synch_enable
+L1_j_reg[2]/next_state
+L1_j_reg[2]/synch_enable
+L1_j_reg[3]/next_state
+L1_j_reg[3]/synch_enable
+L1_j_reg[4]/next_state
+L1_j_reg[4]/synch_enable
+L1_j_reg[5]/next_state
+L1_j_reg[5]/synch_enable
+S_reg[0]/next_state
+S_reg[1]/next_state
+S_reg[2]/next_state
+WEIGHT_reg[0]/next_state
+WEIGHT_reg[1]/next_state
+WEIGHT_reg[2]/next_state
+WEIGHT_reg[3]/next_state
+WEIGHT_reg[4]/next_state
+WEIGHT_reg[5]/next_state
+WEIGHT_reg[6]/next_state
+WEIGHT_reg[7]/next_state
+WEIGHT_reg[8]/next_state
+WEIGHT_reg[9]/next_state
+WEIGHT_reg[10]/next_state
+WEIGHT_reg[11]/next_state
+WEIGHT_reg[12]/next_state
+WEIGHT_reg[13]/next_state
+WEIGHT_reg[14]/next_state
+WEIGHT_reg[15]/next_state
+WEIGHT_reg[16]/next_state
+WEIGHT_reg[17]/next_state
+WEIGHT_reg[18]/next_state
+WEIGHT_reg[19]/next_state
+busy
+busy_reg/next_state
+busy_reg/synch_enable
+caddr_rd[0]
+caddr_rd[1]
+caddr_rd[2]
+caddr_rd[3]
+caddr_rd[4]
+caddr_rd[5]
+caddr_rd[6]
+caddr_rd[7]
+caddr_rd[8]
+caddr_rd[9]
+caddr_rd[10]
+caddr_rd[11]
+caddr_rd_reg[0]/next_state
+caddr_rd_reg[0]/synch_enable
+caddr_rd_reg[1]/next_state
+caddr_rd_reg[1]/synch_enable
+caddr_rd_reg[2]/next_state
+caddr_rd_reg[2]/synch_enable
+caddr_rd_reg[3]/next_state
+caddr_rd_reg[3]/synch_enable
+caddr_rd_reg[4]/next_state
+caddr_rd_reg[4]/synch_enable
+caddr_rd_reg[5]/next_state
+caddr_rd_reg[5]/synch_enable
+caddr_rd_reg[6]/next_state
+caddr_rd_reg[6]/synch_enable
+caddr_rd_reg[7]/next_state
+caddr_rd_reg[7]/synch_enable
+caddr_rd_reg[8]/next_state
+caddr_rd_reg[8]/synch_enable
+caddr_rd_reg[9]/next_state
+caddr_rd_reg[9]/synch_enable
+caddr_rd_reg[10]/next_state
+caddr_rd_reg[10]/synch_enable
+caddr_rd_reg[11]/next_state
+caddr_rd_reg[11]/synch_enable
+caddr_wr[0]
+caddr_wr[1]
+caddr_wr[2]
+caddr_wr[3]
+caddr_wr[4]
+caddr_wr[5]
+caddr_wr[6]
+caddr_wr[7]
+caddr_wr[8]
+caddr_wr[9]
+caddr_wr[10]
+caddr_wr[11]
+caddr_wr_reg[0]/next_state
+caddr_wr_reg[1]/next_state
+caddr_wr_reg[2]/next_state
+caddr_wr_reg[3]/next_state
+caddr_wr_reg[4]/next_state
+caddr_wr_reg[5]/next_state
+caddr_wr_reg[6]/next_state
+caddr_wr_reg[7]/next_state
+caddr_wr_reg[8]/next_state
+caddr_wr_reg[9]/next_state
+caddr_wr_reg[10]/next_state
+caddr_wr_reg[11]/next_state
+cdata_wr[0]
+cdata_wr[1]
+cdata_wr[2]
+cdata_wr[3]
+cdata_wr[4]
+cdata_wr[5]
+cdata_wr[6]
+cdata_wr[7]
+cdata_wr[8]
+cdata_wr[9]
+cdata_wr[10]
+cdata_wr[11]
+cdata_wr[12]
+cdata_wr[13]
+cdata_wr[14]
+cdata_wr[15]
+cdata_wr[16]
+cdata_wr[17]
+cdata_wr[18]
+cdata_wr[19]
+cdata_wr_reg[0]/next_state
+cdata_wr_reg[1]/next_state
+cdata_wr_reg[2]/next_state
+cdata_wr_reg[3]/next_state
+cdata_wr_reg[4]/next_state
+cdata_wr_reg[5]/next_state
+cdata_wr_reg[6]/next_state
+cdata_wr_reg[7]/next_state
+cdata_wr_reg[8]/next_state
+cdata_wr_reg[9]/next_state
+cdata_wr_reg[10]/next_state
+cdata_wr_reg[11]/next_state
+cdata_wr_reg[12]/next_state
+cdata_wr_reg[13]/next_state
+cdata_wr_reg[14]/next_state
+cdata_wr_reg[15]/next_state
+cdata_wr_reg[16]/next_state
+cdata_wr_reg[17]/next_state
+cdata_wr_reg[18]/next_state
+cdata_wr_reg[19]/next_state
+conv_counter_reg[0]/next_state
+conv_counter_reg[0]/synch_enable
+conv_counter_reg[1]/next_state
+conv_counter_reg[1]/synch_enable
+conv_counter_reg[2]/next_state
+conv_counter_reg[2]/synch_enable
+conv_counter_reg[3]/next_state
+conv_counter_reg[3]/synch_enable
+crd
+crd_reg/next_state
+csel[0]
+csel[1]
+csel[2]
+csel_reg[0]/next_state
+csel_reg[1]/next_state
+cwr
+cwr_reg/next_state
+iaddr[0]
+iaddr[1]
+iaddr[2]
+iaddr[3]
+iaddr[4]
+iaddr[5]
+iaddr[6]
+iaddr[7]
+iaddr[8]
+iaddr[9]
+iaddr[10]
+iaddr[11]
+iaddr_reg[0]/next_state
+iaddr_reg[0]/synch_enable
+iaddr_reg[1]/next_state
+iaddr_reg[1]/synch_enable
+iaddr_reg[2]/next_state
+iaddr_reg[2]/synch_enable
+iaddr_reg[3]/next_state
+iaddr_reg[3]/synch_enable
+iaddr_reg[4]/next_state
+iaddr_reg[4]/synch_enable
+iaddr_reg[5]/next_state
+iaddr_reg[5]/synch_enable
+iaddr_reg[6]/next_state
+iaddr_reg[6]/synch_enable
+iaddr_reg[7]/next_state
+iaddr_reg[7]/synch_enable
+iaddr_reg[8]/next_state
+iaddr_reg[8]/synch_enable
+iaddr_reg[9]/next_state
+iaddr_reg[9]/synch_enable
+iaddr_reg[10]/next_state
+iaddr_reg[10]/synch_enable
+iaddr_reg[11]/next_state
+iaddr_reg[11]/synch_enable
+max_val_reg[0]/next_state
+max_val_reg[1]/next_state
+max_val_reg[2]/next_state
+max_val_reg[3]/next_state
+max_val_reg[4]/next_state
+max_val_reg[5]/next_state
+max_val_reg[6]/next_state
+max_val_reg[7]/next_state
+max_val_reg[8]/next_state
+max_val_reg[9]/next_state
+max_val_reg[10]/next_state
+max_val_reg[11]/next_state
+max_val_reg[12]/next_state
+max_val_reg[13]/next_state
+max_val_reg[14]/next_state
+max_val_reg[15]/next_state
+max_val_reg[16]/next_state
+max_val_reg[17]/next_state
+max_val_reg[18]/next_state
+max_val_reg[19]/next_state
+pooling_counter_reg[0]/next_state
+pooling_counter_reg[0]/synch_enable
+pooling_counter_reg[1]/next_state
+pooling_counter_reg[1]/synch_enable
+pooling_counter_reg[2]/next_state
+pooling_counter_reg[2]/synch_enable
+temp_sum_reg[0]/next_state
+temp_sum_reg[1]/next_state
+temp_sum_reg[2]/next_state
+temp_sum_reg[3]/next_state
+temp_sum_reg[4]/next_state
+temp_sum_reg[5]/next_state
+temp_sum_reg[6]/next_state
+temp_sum_reg[7]/next_state
+temp_sum_reg[8]/next_state
+temp_sum_reg[9]/next_state
+temp_sum_reg[10]/next_state
+temp_sum_reg[11]/next_state
+temp_sum_reg[12]/next_state
+temp_sum_reg[13]/next_state
+temp_sum_reg[14]/next_state
+temp_sum_reg[15]/next_state
+temp_sum_reg[16]/next_state
+temp_sum_reg[17]/next_state
+temp_sum_reg[18]/next_state
+temp_sum_reg[19]/next_state
+temp_sum_reg[20]/next_state
+temp_sum_reg[21]/next_state
+temp_sum_reg[22]/next_state
+temp_sum_reg[23]/next_state
+temp_sum_reg[24]/next_state
+temp_sum_reg[25]/next_state
+temp_sum_reg[26]/next_state
+temp_sum_reg[27]/next_state
+temp_sum_reg[28]/next_state
+temp_sum_reg[29]/next_state
+temp_sum_reg[30]/next_state
+temp_sum_reg[31]/next_state
+temp_sum_reg[32]/next_state
+temp_sum_reg[33]/next_state
+temp_sum_reg[34]/next_state
+temp_sum_reg[35]/next_state
+temp_sum_reg[36]/next_state
+temp_sum_reg[37]/next_state
+temp_sum_reg[38]/next_state
+temp_sum_reg[39]/next_state
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+#======================================================
+#  (E) Optimization
+#======================================================
+check_design > Report/$DESIGN\.check
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+set_fix_hold [all_clocks]
+Error: Value for list '<clock_list>' must have 1 elements. (CMD-036)
+0
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Running optimization using a maximum of 8 cores. (OPT-1500)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler NXT WLM                                                           |
+| Comand line  | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 797                                    |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 176                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 1                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 0                                      |
+| Number of Dont Touch cells                              | 231                                    |
+| Number of Dont Touch nets                               | 0                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 22 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'CONV'
+
+Loaded alib file './alib-52/slow.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'CONV'
+Information: Added key list 'DesignWare' to design 'CONV'. (DDB-72)
+Information: The register 'csel_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: In design 'CONV', the register 'WEIGHT_reg[18]' is removed because it is merged to 'WEIGHT_reg[17]'. (OPT-1215)
+Information: In design 'CONV', the register 'WEIGHT_reg[19]' is removed because it is merged to 'WEIGHT_reg[17]'. (OPT-1215)
+Information: In design 'CONV', the register 'WEIGHT_reg[16]' is removed because it is merged to 'WEIGHT_reg[17]'. (OPT-1215)
+ Implement Synthetic for 'CONV'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: The register 'L1_i_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'L1_j_reg[0]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: There is no timing violation in design CONV. Delay-based auto_ungroup will not be performed. (OPT-780)
+  Mapping Optimization (Phase 1)
+Information: The register 'max_val_reg[19]' is a constant and will be removed. (OPT-1206)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:04   45455.3      0.00       0.0      23.2                           5374464.5000
+    0:00:04   45445.3      0.00       0.0      23.2                           5373897.5000
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:04   45877.7      0.00       0.0      23.2                           5483292.0000
+    0:00:04   45877.7      0.00       0.0      23.2                           5483292.0000
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:04   40502.2      0.00       0.0   38208.9                           4130119.2500
+    0:00:04   40502.2      0.00       0.0   38208.9                           4130119.2500
+    0:00:04   40502.2      0.00       0.0   38208.9                           4130119.2500
+    0:00:04   40502.2      0.00       0.0   38208.9                           4130119.2500
+    0:00:04   40502.2      0.00       0.0   38208.9                           4130119.2500
+    0:00:04   40502.2      0.00       0.0   38208.9                           4130119.2500
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:05   40442.4      0.00       0.0   38206.6                           4113081.2500
+    0:00:05   40442.4      0.00       0.0   38206.6                           4113081.2500
+    0:00:05   40442.4      0.00       0.0   38206.6                           4113081.2500
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:05   40345.9      0.00       0.0   38201.6                           3755017.5000
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:00:05   41816.2      0.00       0.0       0.0                           4053145.5000
+    0:00:05   41816.2      0.00       0.0       0.0                           4053145.5000
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:05   41816.2      0.00       0.0       0.0                           4053145.5000
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+    0:00:05   42148.8      0.00       0.0       0.0                           4017175.5000
+    0:00:05   42148.8      0.00       0.0       0.0                           4017175.5000
+    0:00:05   42148.8      0.00       0.0       0.0                           4017175.5000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41746.3      0.00       0.0       0.0                           4042663.0000
+    0:00:06   41759.6      0.00       0.0       0.0                           4044504.7500
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06   41759.6      0.00       0.0       0.0                           4044504.7500
+    0:00:06   41749.6      0.00       0.0       0.0                           4044779.5000
+    0:00:06   41749.6      0.00       0.0       0.0                           4044779.5000
+    0:00:06   41749.6      0.00       0.0       0.0                           4044779.5000
+    0:00:06   41749.6      0.00       0.0       0.0                           4044779.5000
+    0:00:06   41939.3      0.00       0.0       0.0                           4032773.0000
+    0:00:06   41939.3      0.00       0.0       0.0                           4032773.0000
+    0:00:06   41939.3      0.00       0.0       0.0                           4032773.0000
+    0:00:06   41939.3      0.00       0.0       0.0                           4032773.0000
+    0:00:06   41939.3      0.00       0.0       0.0                           4032773.0000
+    0:00:06   41939.3      0.00       0.0       0.0                           4032773.0000
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/umc018/Synthesis/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+1
+#uniquify
+#compile
+#======================================================
+#  (F) Output Reports 
+#======================================================
+report_design  >  Report/$DESIGN\.design
+report_resource >  Report/$DESIGN\.resource
+report_timing -max_paths 3 >  Report/$DESIGN\.timing
+report_area >  Report/$DESIGN\.area
+report_power > Report/$DESIGN\.power
+report_clock > Report/$DESIGN\.clock
+report_port >  Report/$DESIGN\.port
+report_power >  Report/$DESIGN\.power
+#report_reference > Report/$DESIGN\.reference
+#======================================================
+#  (G) Change Naming Rule
+#======================================================
+set bus_inference_style "%s\[%d\]"
+%s[%d]
+set bus_naming_style "%s\[%d\]"
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _" -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _[]" -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+define_name_rules name_rule -case_insensitive
+1
+change_names -hierarchy -rules name_rule
+1
+#======================================================
+#  (H) Output Results
+#======================================================
+set verilogout_higher_designs_first true
+true
+write -format verilog -output Netlist/$DESIGN\_SYN.v -hierarchy
+Writing verilog file '/RAID2/COURSE/2025_Spring/DCS/DCS031/2019_univ/02_SYN/Netlist/CONV_SYN.v'.
+1
+write -format ddc     -hierarchy -output $DESIGN\_SYN.ddc
+Writing ddc file 'CONV_SYN.ddc'.
+1
+write_sdf -version 3.0 -context verilog -load_delay cell Netlist/$DESIGN\_SYN.sdf -significant_digits 6
+Information: Writing timing information to file '/RAID2/COURSE/2025_Spring/DCS/DCS031/2019_univ/02_SYN/Netlist/CONV_SYN.sdf'. (WT-3)
+1
+write_sdc Netlist/$DESIGN\_SYN.sdc
+1
+#======================================================
+#  (I) Finish and Quit
+#======================================================
+report_area
+ 
+****************************************
+Report : area
+Design : CONV
+Version: T-2022.03
+Date   : Tue Mar 18 02:59:27 2025
+****************************************
+
+Library(s) Used:
+
+    slow (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/umc018/Synthesis/slow.db)
+
+Number of ports:                          105
+Number of nets:                          1767
+Number of cells:                         1557
+Number of combinational cells:           1387
+Number of sequential cells:               169
+Number of macros/black boxes:               0
+Number of buf/inv:                        210
+Number of references:                      38
+
+Combinational area:              31530.946256
+Buf/Inv area:                     2102.284876
+Noncombinational area:           10408.305801
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 41939.252057
+Total area:                 undefined
+1
+report_timing 
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONV
+Version: T-2022.03
+Date   : Tue Mar 18 02:59:27 2025
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: busy_reg (rising edge-triggered flip-flop)
+  Endpoint: busy (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  busy_reg/CK (DFFRHQXL)                   0.00       0.00 r
+  busy_reg/Q (DFFRHQXL)                    0.64       0.64 r
+  U608/Y (INVXL)                           0.13       0.77 f
+  U609/Y (INVX4)                           1.67       2.43 r
+  busy (out)                               0.00       2.43 r
+  data arrival time                                   2.43
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+exit
+Memory usage for this session 265 Mbytes.
+Memory usage for this session including child processes 340 Mbytes.
+CPU usage for this session 14 seconds ( 0.00 hours ).
+Elapsed time for this session 12 seconds ( 0.00 hours ).
+
+Thank you...
+

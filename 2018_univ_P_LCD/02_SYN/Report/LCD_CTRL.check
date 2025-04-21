@@ -1,0 +1,25 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Thu Mar 20 11:58:53 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Nets                                                               11
+    Unloaded nets (LINT-2)                                         11
+--------------------------------------------------------------------------------
+
+Warning: In design 'LCD_CTRL', net 'net3065' driven by pin 'C23594/Z' has no loads. (LINT-2)
+Warning: In design 'LCD_CTRL', net 'net3064' driven by pin 'C23580/Z' has no loads. (LINT-2)
+Warning: In design 'LCD_CTRL', net 'net3063' driven by pin 'C23577/Z' has no loads. (LINT-2)
+Warning: In design 'LCD_CTRL', net 'net3062' driven by pin 'C23574/Z' has no loads. (LINT-2)
+Warning: In design 'LCD_CTRL', net 'net3061' driven by pin 'C23573/Z' has no loads. (LINT-2)
+Warning: In design 'LCD_CTRL', net 'net3060' driven by pin 'C23560/Z' has no loads. (LINT-2)
+Warning: In design 'LCD_CTRL', net 'net3059' driven by pin 'C23596/Z' has no loads. (LINT-2)
+Warning: In design 'LCD_CTRL', net 'net3058' driven by pin 'C23552/Z' has no loads. (LINT-2)
+Warning: In design 'LCD_CTRL', net 'net3057' driven by pin 'C23595/Z' has no loads. (LINT-2)
+Warning: In design 'LCD_CTRL', net 'net3056' driven by pin 'C23512/Z' has no loads. (LINT-2)
+Warning: In design 'LCD_CTRL', net 'net3055' driven by pin 'C22127/Z' has no loads. (LINT-2)
+1

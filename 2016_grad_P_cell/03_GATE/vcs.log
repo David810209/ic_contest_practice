@@ -1,0 +1,124 @@
+Command: vcs -timescale=1ns/1fs -j8 -sverilog +v2k -full64 -Mupdate -R -debug_access+all \
+-f filelist.f -o simv -l vcs.log -P /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/novas.tab \
+/usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a -v /home/cell_library/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v \
++define+GATE +maxdelays +neg_tchk +nowarnNTCDSN
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Thu Mar 20 11:29:46 2025
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'tb.v'
+Parsing design file 'LBP.v'
+Top Level Modules:
+       testfixture
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+
+
+Note-[VCS_PARAL] Parallel code-gen enabled
+  VCS is running with parallel code generation(-j)...
+
+1 module and 0 UDP read.
+recompiling module testfixture
+make[1]: Entering directory `/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/2016_grad_P_cell/03_GATE/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _69008_archive_1.so \
+_69056_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a \
+-lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/LINUX64/pli.a \
+-ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/2016_grad_P_cell/03_GATE/csrc' \
+
+Command: /RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/2016_grad_P_cell/03_GATE/./simv +v2k -a vcs.log +define+GATE +maxdelays +neg_tchk +nowarnNTCDSN
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Mar 20 11:29 2025
+*Verdi* Loading libsscore_vcs201906.so
+FSDB Dumper for VCS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+***********************************************************************
+*  ERROR -                                                            *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior, please contact Synopsys support for   *
+*  assistance.                                                        *
+***********************************************************************
+*Verdi* : Create FSDB file 'LBP.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+Output pixel: 0 ~           0 are correct!
+
+Output pixel: 0 ~        1000 are correct!
+
+Output pixel: 0 ~        2000 are correct!
+
+Output pixel: 0 ~        3000 are correct!
+
+Output pixel: 0 ~        4000 are correct!
+
+Output pixel: 0 ~        5000 are correct!
+
+Output pixel: 0 ~        6000 are correct!
+
+Output pixel: 0 ~        7000 are correct!
+
+Output pixel: 0 ~        8000 are correct!
+
+Output pixel: 0 ~        9000 are correct!
+
+Output pixel: 0 ~       10000 are correct!
+
+Output pixel: 0 ~       11000 are correct!
+
+Output pixel: 0 ~       12000 are correct!
+
+Output pixel: 0 ~       13000 are correct!
+
+Output pixel: 0 ~       14000 are correct!
+
+Output pixel: 0 ~       15000 are correct!
+
+Output pixel: 0 ~       16000 are correct!
+
+Output pixel: 0 ~       16383 are correct!
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+-------------------------PASS------------------------
+
+$finish called from file "tb.v", line 128.
+$finish at simulation time            174643000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1746430000 ps
+CPU Time:      0.730 seconds;       Data structure size:   0.0Mb
+Thu Mar 20 11:29:50 2025
+CPU time: .603 seconds to compile + .514 seconds to elab + .493 seconds to link + .776 seconds in simulation

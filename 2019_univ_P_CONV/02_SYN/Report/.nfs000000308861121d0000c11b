@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : JAM
+Version: T-2022.03
+Date   : Tue Mar 18 01:52:46 2025
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db)
+
+Number of ports:                          868
+Number of nets:                          3994
+Number of cells:                         1959
+Number of combinational cells:           1252
+Number of sequential cells:               634
+Number of macros/black boxes:               0
+Number of buf/inv:                        337
+Number of references:                      38
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1

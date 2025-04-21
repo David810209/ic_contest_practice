@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : JAM
+Version: T-2022.03
+Date   : Tue Mar 18 02:01:30 2025
+****************************************
+
+Library(s) Used:
+
+    slow (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/umc018/Synthesis/slow.db)
+
+Number of ports:                           30
+Number of nets:                          2320
+Number of cells:                         2266
+Number of combinational cells:           1735
+Number of sequential cells:               531
+Number of macros/black boxes:               0
+Number of buf/inv:                        335
+Number of references:                      40
+
+Combinational area:              31610.779746
+Buf/Inv area:                     3359.664121
+Noncombinational area:           28700.179577
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 60310.959323
+Total area:                 undefined
+1

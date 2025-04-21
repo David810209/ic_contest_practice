@@ -1,0 +1,39 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Tue Mar 18 02:59:19 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+
+Nets                                                               20
+    Unloaded nets (LINT-2)                                         20
+--------------------------------------------------------------------------------
+
+Warning: In design 'CONV', cell 'B_66' does not drive any nets. (LINT-1)
+Warning: In design 'CONV', cell 'B_67' does not drive any nets. (LINT-1)
+Warning: In design 'CONV', net 'net218' driven by pin 'C1820/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net217' driven by pin 'C1778/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net216' driven by pin 'C1756/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net215' driven by pin 'C1755/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net214' driven by pin 'C1754/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net213' driven by pin 'C1735/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net212' driven by pin 'C1824/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net211' driven by pin 'C1720/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net210' driven by pin 'C1710/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net209' driven by pin 'C1591/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net208' driven by pin 'C1590/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net207' driven by pin 'C1589/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net206' driven by pin 'C1588/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net205' driven by pin 'C1587/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net204' driven by pin 'C1586/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net203' driven by pin 'C1585/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net202' driven by pin 'C1584/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net201' driven by pin 'C1542/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net200' driven by pin 'C1545/Z' has no loads. (LINT-2)
+Warning: In design 'CONV', net 'net199' driven by pin 'C1531/Z' has no loads. (LINT-2)
+1
