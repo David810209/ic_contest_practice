@@ -1,0 +1,1 @@
+vcs -full64 -R -sverilog testfixture_60fps.v LEDDC.v sram_512x16/sram_512x16.v sram_256x16/sram_256x16.v  +access+r +neg_tchk +vcs+fsdbon +fsdbfile+LEDDC.fsdb +notimingchecks

@@ -1,0 +1,96 @@
+ 
+****************************************
+Report : qor
+Design : LEDDC
+Version: T-2022.03
+Date   : Sun May  4 03:11:33 2025
+****************************************
+
+
+  Timing Path Group 'DCK'
+  -----------------------------------
+  Levels of Logic:              10.00
+  Critical Path Length:          4.72
+  Critical Path Slack:        1294.95
+  Critical Path Clk Period:   1300.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'GCK'
+  -----------------------------------
+  Levels of Logic:              16.00
+  Critical Path Length:          4.19
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      4.50
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         69
+  Hierarchical Port Count:       2098
+  Leaf Cell Count:               5749
+  Buf/Inv Cell Count:             774
+  Buf Cell Count:                 233
+  Inv Cell Count:                 541
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      4565
+  Sequential Cell Count:         1184
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    44835.123619
+  Noncombinational Area: 39420.416435
+  Buf/Inv Area:           3999.074353
+  Total Buffer Area:          1744.93
+  Total Inverter Area:        2254.15
+  Macro/Black Box Area: 156659.296875
+  Net Area:             755817.194092
+  -----------------------------------
+  Cell Area:            240914.836929
+  Design Area:          996732.031021
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          6569
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: ee21
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    7.08
+  Logic Optimization:                  6.13
+  Mapping Optimization:               10.95
+  -----------------------------------------
+  Overall Compile Time:               26.70
+  Overall Compile Wall Clock Time:    27.38
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

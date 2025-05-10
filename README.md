@@ -6,6 +6,7 @@
 
 | 題目 | 年級 | Area | Time / Cycle | Score | Rank | 備註 |
 |------|------|------|-------------|-------|------|------|
+| 2017 | LEDDC | grad(final) | 240914.836929 | - | B |A rank要APR，大學不用所以沒做 |
 | 2025  | Univ | 94314 | 1895 cycle | 178725030 | A | 參賽第一年，寫得很亂 |
 | 2022 JAM | Univ | 6499.34 | 593,427 cycles | - | A | - |
 | 2021 Geofence | Univ | 92506.60 | - | - | B | 面積過大，需重寫 |
@@ -15,6 +16,13 @@
 | 2016 LBP | Grad | 4447.19 | 1,746,430 ns | 7,766,706,032 | A | - |
 | 2010 Serial Interface Transmitter/Receiver | Univ | - | - | - | - | TODO |
 ---
+
+---
+## 複賽 (Final Round)
+
+
+### 2017 LEDDC
+
 
 ## 初賽 (Preliminary Round)
 
@@ -111,11 +119,5 @@
 
 ### 2010 UNIVERSITY: Serial Interface Transmitter/Receiver
 **TODO**  
-
----
-## 複賽 (Final Round) - Undergraduate
-
-### 2019 FPSDC
-**TODO**
 
 ---

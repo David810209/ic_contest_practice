@@ -1,0 +1,826 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version T-2022.03 for linux64 - Feb 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+#Read All Files
+read_file -format verilog  LEDDC.v
+Loading db file '/RAID2/COURSE/2025_Spring/DCS/DCSTA01/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'gtech'
+Loading verilog file '/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v
+Warning:  /RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v:145: signed to unsigned assignment occurs. (VER-318)
+Warning:  /RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v:146: signed to unsigned assignment occurs. (VER-318)
+Warning:  /RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v:216: signed to unsigned assignment occurs. (VER-318)
+Warning:  /RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v:218: signed to unsigned assignment occurs. (VER-318)
+Warning:  /RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v:325: signed to unsigned conversion occurs. (VER-318)
+Warning:  /RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v:366: signed to unsigned assignment occurs. (VER-318)
+Warning:  /RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v:367: signed to unsigned assignment occurs. (VER-318)
+Warning:  /RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v:369: signed to unsigned assignment occurs. (VER-318)
+Warning:  /RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v:409: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 143 in file
+	'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           144            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 214 in file
+	'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           215            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LEDDC line 67 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    input_cnt_reg    | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 75 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     DEN_reg_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 79 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   DEN_reg_reg_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 84 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  tmp_input_reg_reg  | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 95 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      CENB_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 101 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       AB_reg        | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 107 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       DB_reg        | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 115 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      CENB2_reg      | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 121 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       AB2_reg       | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 127 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       DB2_reg       | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 138 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   Vsyncstate_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 151 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  VsyncCounter_reg   | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 166 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| prev_VysyncCounter_reg | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 175 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| write_round_cnt_reg | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 191 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| read_round_cnt_reg  | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 209 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    Readstate_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 224 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      first_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 235 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| finish_one_scanline_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 252 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| readPixelcounter_reg | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 269 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  read_address_reg   | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 285 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       AA_reg        | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      CENA_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 302 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       AA2_reg       | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      CENA2_reg      | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 317 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| output_reg_buffer_reg | Flip-flop |  256  |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 341 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   output_reg_reg    | Flip-flop |  256  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 359 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       OUT_reg       | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 377 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   output_cnt_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 389 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  scanline_cnt_reg   | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 404 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   next_round_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 417 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| output_reg_first_reg | Flip-flop |  240  |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine LEDDC line 437 in file
+		'/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| output_reg_second_reg | Flip-flop |  240  |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Current design is now '/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.db:LEDDC'
+Loaded 1 design.
+Current design is 'LEDDC'.
+LEDDC
+#read_file -format sverilog  JAM.v
+current_design LEDDC
+Current design is 'LEDDC'.
+{LEDDC}
+link
+
+  Linking design 'LEDDC'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  LEDDC                       /RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC.db
+  slow (library)              /RAID2/COURSE/2025_Spring/DCS/DCSTA01/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/2022.03/libraries/syn/dw_foundation.sldb
+
+Information: Building the design 'sram_512x16'. (HDL-193)
+Warning: Cannot find the design 'sram_512x16' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_512x16' in 'LEDDC'. (LINK-5)
+0
+#Setting Clock Constraints
+source -echo -verbose LEDDC.sdc
+Error: could not open script file "LEDDC.sdc" (CMD-015)
+check_design
+Warning: Design 'LEDDC' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Sat May  3 19:26:11 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      2
+    Multiply driven inputs (LINT-6)                                 2
+
+Cells                                                              93
+    Cells do not drive (LINT-1)                                    93
+
+Tristate                                                           72
+    A tristate bus has a non tri-state driver (LINT-34)            72
+--------------------------------------------------------------------------------
+
+Warning: In design 'LEDDC', cell 'C11844' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C11865' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C11883' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C11905' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C11913' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C11923' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C11925' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C11965' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C11973' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12137' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12140' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12143' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12146' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12149' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12152' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12155' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12158' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12161' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12164' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12167' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12170' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12173' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12176' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12179' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12182' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12188' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12190' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12192' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12196' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12198' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12203' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12205' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12210' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12212' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12217' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12219' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12224' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12226' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12231' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12233' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12238' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12240' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12245' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12247' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12252' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12254' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12259' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12261' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12266' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12268' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12273' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12275' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12280' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12282' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12287' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12289' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12297' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12299' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12303' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12311' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12324' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12330' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12336' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12342' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12348' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12354' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12360' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12366' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12372' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12378' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12384' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12390' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12396' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12402' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12408' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12414' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12415' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12425' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12432' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12439' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12446' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12453' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12460' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12467' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12474' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12481' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12488' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12495' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12502' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12509' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12516' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12523' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', cell 'C12530' does not drive any nets. (LINT-1)
+Warning: In design 'LEDDC', input port 'DCK' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'LEDDC', input port 'GCK' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'LEDDC', three-state bus 'AA2[0]' has non three-state driver 'AA2_reg[0]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA2[1]' has non three-state driver 'AA2_reg[1]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA2[2]' has non three-state driver 'AA2_reg[2]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA2[3]' has non three-state driver 'AA2_reg[3]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA2[4]' has non three-state driver 'AA2_reg[4]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA2[5]' has non three-state driver 'AA2_reg[5]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA2[6]' has non three-state driver 'AA2_reg[6]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA2[7]' has non three-state driver 'AA2_reg[7]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA2[8]' has non three-state driver 'AA2_reg[8]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'CENA2' has non three-state driver 'CENA2_reg/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA[0]' has non three-state driver 'AA_reg[0]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA[1]' has non three-state driver 'AA_reg[1]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA[2]' has non three-state driver 'AA_reg[2]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA[3]' has non three-state driver 'AA_reg[3]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA[4]' has non three-state driver 'AA_reg[4]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA[5]' has non three-state driver 'AA_reg[5]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA[6]' has non three-state driver 'AA_reg[6]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA[7]' has non three-state driver 'AA_reg[7]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AA[8]' has non three-state driver 'AA_reg[8]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'CENA' has non three-state driver 'CENA_reg/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[0]' has non three-state driver 'DB2_reg[0]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[1]' has non three-state driver 'DB2_reg[1]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[2]' has non three-state driver 'DB2_reg[2]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[3]' has non three-state driver 'DB2_reg[3]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[4]' has non three-state driver 'DB2_reg[4]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[5]' has non three-state driver 'DB2_reg[5]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[6]' has non three-state driver 'DB2_reg[6]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[7]' has non three-state driver 'DB2_reg[7]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[8]' has non three-state driver 'DB2_reg[8]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[9]' has non three-state driver 'DB2_reg[9]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[10]' has non three-state driver 'DB2_reg[10]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[11]' has non three-state driver 'DB2_reg[11]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[12]' has non three-state driver 'DB2_reg[12]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[13]' has non three-state driver 'DB2_reg[13]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[14]' has non three-state driver 'DB2_reg[14]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB2[15]' has non three-state driver 'DB2_reg[15]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB2[0]' has non three-state driver 'AB2_reg[0]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB2[1]' has non three-state driver 'AB2_reg[1]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB2[2]' has non three-state driver 'AB2_reg[2]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB2[3]' has non three-state driver 'AB2_reg[3]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB2[4]' has non three-state driver 'AB2_reg[4]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB2[5]' has non three-state driver 'AB2_reg[5]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB2[6]' has non three-state driver 'AB2_reg[6]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB2[7]' has non three-state driver 'AB2_reg[7]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB2[8]' has non three-state driver 'AB2_reg[8]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'CENB2' has non three-state driver 'CENB2_reg/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[0]' has non three-state driver 'DB_reg[0]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[1]' has non three-state driver 'DB_reg[1]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[2]' has non three-state driver 'DB_reg[2]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[3]' has non three-state driver 'DB_reg[3]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[4]' has non three-state driver 'DB_reg[4]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[5]' has non three-state driver 'DB_reg[5]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[6]' has non three-state driver 'DB_reg[6]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[7]' has non three-state driver 'DB_reg[7]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[8]' has non three-state driver 'DB_reg[8]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[9]' has non three-state driver 'DB_reg[9]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[10]' has non three-state driver 'DB_reg[10]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[11]' has non three-state driver 'DB_reg[11]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[12]' has non three-state driver 'DB_reg[12]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[13]' has non three-state driver 'DB_reg[13]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[14]' has non three-state driver 'DB_reg[14]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'DB[15]' has non three-state driver 'DB_reg[15]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB[0]' has non three-state driver 'AB_reg[0]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB[1]' has non three-state driver 'AB_reg[1]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB[2]' has non three-state driver 'AB_reg[2]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB[3]' has non three-state driver 'AB_reg[3]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB[4]' has non three-state driver 'AB_reg[4]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB[5]' has non three-state driver 'AB_reg[5]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB[6]' has non three-state driver 'AB_reg[6]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB[7]' has non three-state driver 'AB_reg[7]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'AB[8]' has non three-state driver 'AB_reg[8]/Q'. (LINT-34)
+Warning: In design 'LEDDC', three-state bus 'CENB' has non three-state driver 'CENB_reg/Q'. (LINT-34)
+1
+set high_fanout_net_threshold 0
+0
+uniquify
+Warning: Design 'LEDDC' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+#Synthesis all design
+compile -map_effort high -area_effort high
+Warning: Design 'LEDDC' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 2851                                   |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 1187                                   |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 1                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 0                                      |
+| Number of Dont Touch cells                              | 471                                    |
+| Number of Dont Touch nets                               | 0                                      |
+| Number of size only cells                               | 72                                     |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+
+Information: There are 167 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'LEDDC'
+Information: The register 'read_round_cnt_reg[1]' will be removed. (OPT-1207)
+Information: The register 'Vsyncstate_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Vsyncstate_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Vsyncstate_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Readstate_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Readstate_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: Building the design 'sram_512x16'. (HDL-193)
+Warning: Cannot find the design 'sram_512x16' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_512x16' in 'LEDDC'. (LINK-5)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Design 'LEDDC' has no optimization constraints set. (OPT-108)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'LEDDC_DW01_incdec_0'
+  Processing 'LEDDC_DW01_incdec_1'
+  Processing 'LEDDC_DW01_incdec_2'
+  Processing 'LEDDC_DW01_dec_0'
+  Processing 'LEDDC_DW01_incdec_3'
+  Processing 'LEDDC_DW01_incdec_4'
+  Processing 'LEDDC_DW01_inc_0_DW01_inc_2'
+  Processing 'LEDDC_DW01_cmp2_0_DW01_cmp2_1'
+  Processing 'LEDDC_DW01_dec_1'
+  Processing 'LEDDC_DW01_dec_2'
+  Processing 'LEDDC_DW01_incdec_5'
+  Processing 'LEDDC_DW01_dec_3'
+  Processing 'LEDDC_DW01_dec_4'
+  Processing 'LEDDC_DW01_cmp2_1_DW01_cmp2_2'
+  Processing 'LEDDC_DW01_incdec_6'
+  Processing 'LEDDC_DW01_dec_5'
+  Processing 'LEDDC_DW01_cmp2_2_DW01_cmp2_3'
+  Processing 'LEDDC_DW01_cmp2_3_DW01_cmp2_4'
+  Processing 'LEDDC_DW01_dec_6'
+  Processing 'LEDDC_DW01_incdec_7'
+  Processing 'LEDDC_DW01_cmp2_4_DW01_cmp2_5'
+  Processing 'LEDDC_DW01_cmp2_5_DW01_cmp2_6'
+  Processing 'LEDDC_DW01_inc_1_DW01_inc_3'
+  Processing 'LEDDC_DW01_dec_7'
+  Processing 'LEDDC_DW01_dec_8'
+  Processing 'LEDDC_DW01_cmp2_6_DW01_cmp2_7'
+  Processing 'LEDDC_DW01_dec_9'
+  Processing 'LEDDC_DW01_cmp2_7_DW01_cmp2_8'
+  Processing 'LEDDC_DW01_incdec_8'
+  Processing 'LEDDC_DW01_cmp2_8_DW01_cmp2_9'
+  Processing 'LEDDC_DW01_dec_10'
+  Processing 'LEDDC_DW01_incdec_9'
+  Processing 'LEDDC_DW01_cmp2_9_DW01_cmp2_10'
+  Processing 'LEDDC_DW01_dec_11'
+  Processing 'LEDDC_DW01_dec_12'
+  Processing 'LEDDC_DW01_incdec_10'
+  Processing 'LEDDC_DW01_dec_13'
+  Processing 'LEDDC_DW01_dec_14'
+  Processing 'LEDDC_DW01_dec_15'
+  Processing 'LEDDC_DW01_incdec_11'
+  Processing 'LEDDC_DW01_cmp2_10_DW01_cmp2_11'
+  Processing 'LEDDC_DW01_dec_16'
+  Processing 'LEDDC_DW01_dec_17'
+  Processing 'LEDDC_DW01_incdec_12'
+  Processing 'LEDDC_DW01_cmp2_11_DW01_cmp2_12'
+  Processing 'LEDDC_DW01_dec_18'
+  Processing 'LEDDC_DW01_dec_19'
+  Processing 'LEDDC_DW01_cmp2_12_DW01_cmp2_13'
+  Processing 'LEDDC_DW01_cmp2_13_DW01_cmp2_14'
+  Processing 'LEDDC_DW01_dec_20'
+  Processing 'LEDDC_DW01_dec_21'
+  Processing 'LEDDC_DW01_cmp2_14_DW01_cmp2_15'
+  Processing 'LEDDC_DW01_cmp2_15_DW01_cmp2_16'
+  Processing 'LEDDC_DW01_dec_22'
+  Processing 'LEDDC_DW01_incdec_13'
+  Processing 'LEDDC_DW01_cmp2_16_DW01_cmp2_17'
+  Processing 'LEDDC_DW01_dec_23'
+  Processing 'LEDDC_DW01_cmp2_17_DW01_cmp2_18'
+  Processing 'LEDDC_DW01_cmp2_18_DW01_cmp2_19'
+  Processing 'LEDDC_DW01_inc_2_DW01_inc_4'
+  Processing 'LEDDC_DW01_dec_24'
+  Processing 'LEDDC_DW01_cmp2_19_DW01_cmp2_20'
+  Processing 'LEDDC_DW01_dec_25'
+  Processing 'LEDDC_DW01_cmp2_20_DW01_cmp2_21'
+  Processing 'LEDDC_DW01_cmp2_21_DW01_cmp2_22'
+  Processing 'LEDDC_DW01_dec_26'
+  Processing 'LEDDC_DW01_cmp2_22_DW01_cmp2_23'
+  Processing 'LEDDC_DW01_dec_27'
+  Processing 'LEDDC_DW01_cmp2_23_DW01_cmp2_24'
+  Processing 'LEDDC_DW01_incdec_14'
+  Processing 'LEDDC_DW01_cmp2_24_DW01_cmp2_25'
+  Processing 'LEDDC_DW01_cmp2_25_DW01_cmp2_26'
+  Processing 'LEDDC_DW01_dec_28'
+  Processing 'LEDDC_DW01_incdec_15'
+  Processing 'LEDDC_DW01_cmp2_26_DW01_cmp2_27'
+  Processing 'LEDDC_DW01_cmp2_27_DW01_cmp2_28'
+  Processing 'LEDDC_DW01_cmp2_28_DW01_cmp2_29'
+  Processing 'LEDDC_DW01_inc_3_DW01_inc_5'
+  Processing 'LEDDC_DW01_inc_4_DW01_inc_6'
+  Processing 'LEDDC_DW01_cmp2_29_DW01_cmp2_30'
+  Processing 'LEDDC_DW01_dec_29'
+  Processing 'LEDDC_DW01_cmp2_30_DW01_cmp2_31'
+  Processing 'LEDDC_DW01_dec_30'
+  Processing 'LEDDC_DW01_inc_5_DW01_inc_7'
+  Mapping 'LEDDC_DW_cmp_0'
+  Mapping 'LEDDC_DW_cmp_1'
+  Mapping 'LEDDC_DW_cmp_2'
+  Mapping 'LEDDC_DW_cmp_3'
+  Mapping 'LEDDC_DW_cmp_4'
+  Mapping 'LEDDC_DW_cmp_5'
+  Mapping 'LEDDC_DW_cmp_6'
+  Mapping 'LEDDC_DW_cmp_7'
+  Mapping 'LEDDC_DW_cmp_8'
+  Mapping 'LEDDC_DW_cmp_9'
+  Mapping 'LEDDC_DW_cmp_10'
+  Mapping 'LEDDC_DW_cmp_11'
+  Mapping 'LEDDC_DW_cmp_12'
+  Mapping 'LEDDC_DW_cmp_13'
+  Mapping 'LEDDC_DW_cmp_14'
+  Mapping 'LEDDC_DW_cmp_15'
+  Processing 'LEDDC_DW01_dec_31'
+  Processing 'LEDDC_DW01_dec_32'
+  Processing 'LEDDC_DW01_cmp2_31_DW01_cmp2_32'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'LEDDC'. (DDB-72)
+  Structuring 'LEDDC'
+  Mapping 'LEDDC'
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:09  120289.6      0.00       0.0    7706.2                          
+    0:00:09  120289.6      0.00       0.0    7706.2                          
+    0:00:09  120289.6      0.00       0.0    7706.2                          
+    0:00:09  120289.6      0.00       0.0    7706.2                          
+    0:00:09  120289.6      0.00       0.0    7706.2                          
+    0:00:10   80697.8      0.00       0.0       0.0                          
+    0:00:10   80697.8      0.00       0.0       0.0                          
+    0:00:10   80697.8      0.00       0.0       0.0                          
+    0:00:10   80697.8      0.00       0.0       0.0                          
+    0:00:10   80697.8      0.00       0.0       0.0                          
+    0:00:10   80697.8      0.00       0.0       0.0                          
+    0:00:10   80697.8      0.00       0.0       0.0                          
+    0:00:10   80697.8      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:10   80697.8      0.00       0.0       0.0                          
+    0:00:10   80697.8      0.00       0.0       0.0                          
+    0:00:10   80697.8      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:10   80697.8      0.00       0.0       0.0                          
+    0:00:10   80697.8      0.00       0.0       0.0                          
+    0:00:11   78358.8      0.00       0.0       0.0                          
+    0:00:12   78280.7      0.00       0.0       0.0                          
+    0:00:12   78270.5      0.00       0.0       0.0                          
+    0:00:12   78260.3      0.00       0.0       0.0                          
+    0:00:12   78250.1      0.00       0.0       0.0                          
+    0:00:12   78250.1      0.00       0.0       0.0                          
+    0:00:12   78250.1      0.00       0.0       0.0                          
+    0:00:12   78250.1      0.00       0.0       0.0                          
+    0:00:12   78250.1      0.00       0.0       0.0                          
+    0:00:12   78250.1      0.00       0.0       0.0                          
+    0:00:12   78250.1      0.00       0.0       0.0                          
+    0:00:12   78250.1      0.00       0.0       0.0                          
+Loading db file '/RAID2/COURSE/2025_Spring/DCS/DCSTA01/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+#compile -map_effort high -area_effort high -inc
+#compile_ultra
+write -format ddc     -hierarchy -output "LEDDC_syn.ddc"
+Information: Building the design 'sram_512x16'. (HDL-193)
+Warning: Cannot find the design 'sram_512x16' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_512x16' in 'LEDDC'. (LINK-5)
+Writing ddc file 'LEDDC_syn.ddc'.
+1
+write_sdf -version 1.0  LEDDC_syn.sdf
+Warning: Design 'LEDDC' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC_syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+Warning: Design contains black-box components.  These cells will have no timing information. (WT-7)
+1
+write -format verilog -hierarchy -output LEDDC_syn.v
+Warning: Design 'LEDDC' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Writing verilog file '/RAID2/COURSE/2025_Spring/DCS/DCS031/ic_contest_practice/icc2017cb/LEDDC_syn.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+report_area > area.log
+report_timing > timing.log
+report_qor   >  LEDDC_syn.qor
+exit
+Memory usage for this session 220 Mbytes.
+Memory usage for this session including child processes 220 Mbytes.
+CPU usage for this session 15 seconds ( 0.00 hours ).
+Elapsed time for this session 18 seconds ( 0.00 hours ).
+
+Thank you...

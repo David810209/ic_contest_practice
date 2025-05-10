@@ -1,0 +1,1 @@
+vcs -full64 -R -sverilog testfixture_60fps.v  LEDDC_syn.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +define+SDF +access+r +neg_tchk +vcs+fsdbon +fsdb+mda +fsdbfile+LEDDC.fsdb -v /RAID2/COURSE/2025_Spring/DCS/DCSTA01/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v +maxdelays
